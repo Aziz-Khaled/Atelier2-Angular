@@ -1,0 +1,29 @@
+<div  >
+
+    
+  
+  
+  
+  
+      <input [(ngModel)] = "note" />
+      <button (click)="addNote()" >addNote</button>
+      <button (click)="deleteAll()">Suppr</button>
+      <button (click)="affiche()">afficher</button>
+  
+      
+  
+      <ul>
+  
+        <li [ngStyle]="{'color': editcolor()}"
+        *ngFor=" let n of Notes ;">
+         {{n}} <button (click)="popeee()">x</button>
+        </li>
+      </ul>
+  
+  
+    
+  
+  
+  </div>
+  
+  
